@@ -1,0 +1,16 @@
+[package]
+name = "rocket-project"
+version = "0.1.0"
+authors = ["vapvin <tpehdj12@daum.net>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+torio = { version = "0.2", features = ["macros", "rt-threaded"] }
+wrap = "0.2"
+thiserror = "1.0"
+askama ="0.8"
+serde = {version="1.0", features = ["derive"]}
+chrono = {version="0.4", features = ["serde"]}
+uuid = {version="0.8", features = ["serde", "v4""]}
